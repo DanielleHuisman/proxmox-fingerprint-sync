@@ -6,6 +6,9 @@
     "parserOptions": {
         "project": true
     },
+    "env": {
+        "node": true
+    },
     "rules": {
         "@typescript-eslint/consistent-type-imports": [
             "warn",
