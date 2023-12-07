@@ -1,0 +1,20 @@
+{
+    "name": "proxmox-fingerprint-sync",
+    "version": "0.1.0",
+    "description": "Synchronise the fingerprint of Proxmox Backup Server to Proxmox VE.",
+    "author": "Danielle Huisman <danielle@huisman.me>",
+    "repository": "github:DanielleHuisman/proxmox-fingerprint-sync",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint src",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+        "@typescript-eslint/eslint-plugin": "^6.13.2",
+        "@typescript-eslint/parser": "^6.13.2",
+        "eslint": "^8.55.0",
+        "prettier": "^3.1.0",
+        "typescript": "^5.3.3"
+    }
+}
