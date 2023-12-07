@@ -10,7 +10,7 @@ Synchronise the fingerprint of Proxmox Backup Server to Proxmox VE.
 
 ### PVE
 
-`Datastore.Audit` and `Datastore.Allocate` (included in `PVEDatastoreAdmin` role) on `/storage/<storage>` for both the user and the API token.
+`Datastore.Audit` and `Datastore.Allocate` (included in `PVEDatastoreAdmin` role) on `/storage` and `/storage/<storage>` for both the user and the API token.
 
 ## License
 
