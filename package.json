@@ -6,9 +6,16 @@
     "repository": "github:DanielleHuisman/proxmox-fingerprint-sync",
     "license": "MIT",
     "type": "module",
+    "bin": "./dist/index.js",
+    "files": [
+        "dist",
+        "LICENSE.md",
+        "README.md"
+    ],
     "scripts": {
         "lint": "eslint src",
-        "build": "tsc",
+        "clean": "rimraf dist",
+        "build": "npm run clean && tsc",
         "dev": "dotenv tsx src/index.ts"
     },
     "dependencies": {
@@ -24,6 +31,7 @@
         "dotenv-cli": "^7.3.0",
         "eslint": "^8.55.0",
         "prettier": "^3.1.0",
+        "rimraf": "^5.0.5",
         "ts-node": "^10.9.1",
         "tsx": "^4.6.2",
         "typescript": "^5.3.3"
