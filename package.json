@@ -16,7 +16,8 @@
         "lint": "eslint src",
         "clean": "rimraf dist",
         "build": "npm run clean && tsc",
-        "dev": "dotenv tsx src/index.ts"
+        "dev": "dotenv tsx src/index.ts",
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
         "@t3-oss/env-core": "^0.7.1",
