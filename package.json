@@ -1,6 +1,6 @@
 {
     "name": "proxmox-fingerprint-sync",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Synchronise the fingerprint of Proxmox Backup Server to Proxmox VE.",
     "author": "Danielle Huisman <danielle@huisman.me>",
     "repository": "github:DanielleHuisman/proxmox-fingerprint-sync",
