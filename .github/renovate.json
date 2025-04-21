@@ -1,0 +1,14 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:recommended", "schedule:weekly", ":prConcurrentLimitNone", ":prHourlyLimitNone"],
+    "packageRules": [
+        {
+            "automerge": true,
+            "matchCurrentVersion": "!/^0/",
+            "matchUpdateTypes": ["minor", "patch"]
+        }
+    ],
+    "pre-commit": {
+        "enabled": true
+    }
+}
