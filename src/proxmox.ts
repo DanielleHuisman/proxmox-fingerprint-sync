@@ -77,9 +77,13 @@ const setFingerprint = async (storage: Storage, fingerprint: string) => {
 };
 
 export const sync = async () => {
+    console.log(`Fetching fingerprint from "${env.PBS_URL}"...`);
+
     const fingerprint = await getFingerprint();
     console.log('PBS fingerprint:', fingerprint);
     console.log();
+
+    console.log(`Fetching storages from "${env.PVE_URL}"...`);
 
     const storages = await getStorages();
 

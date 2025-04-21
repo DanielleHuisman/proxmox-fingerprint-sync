@@ -10,3 +10,4 @@ const job = CronJob.from({
 });
 
 job.start();
+console.log(`Started cron job with schedule "${env.CRON}" in timezone "${env.TZ}".`);
