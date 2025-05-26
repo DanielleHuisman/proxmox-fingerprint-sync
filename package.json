@@ -20,7 +20,7 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "@t3-oss/env-core": "^0.7.1",
+        "@t3-oss/env-core": "^0.13.0",
         "cron": "^4.3.0",
         "zod": "^3.22.4"
     },
