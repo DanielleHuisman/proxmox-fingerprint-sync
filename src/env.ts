@@ -1,5 +1,5 @@
-import {createEnv} from '@t3-oss/env-core';
-import {z} from 'zod';
+import { createEnv } from '@t3-oss/env-core';
+import { z } from 'zod';
 
 export const env = createEnv({
     server: {
@@ -13,11 +13,10 @@ export const env = createEnv({
         PVE_API_TOKEN_ID: z.string().min(1),
         PVE_API_TOKEN_SECRET: z.string().min(1),
 
-        TZ: z.string().default('Europe/Amsterdam')
+        TZ: z.string().default('Europe/Amsterdam'),
     },
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
     runtimeEnv: process.env,
 
-    emptyStringAsUndefined: true
+    emptyStringAsUndefined: true,
 });

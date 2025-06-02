@@ -1,11 +1,11 @@
 {
-    "plugins": ["@trivago/prettier-plugin-sort-imports"],
-    "bracketSpacing": false,
+    "$schema": "https://json.schemastore.org/prettierrc",
     "importOrder": ["^~/", "^[.]"],
     "importOrderSeparation": true,
     "importOrderSortSpecifiers": true,
+    "jsonRecursiveSort": true,
+    "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-sort-json"],
     "printWidth": 120,
     "singleQuote": true,
-    "tabWidth": 4,
-    "trailingComma": "none"
+    "tabWidth": 4
 }
