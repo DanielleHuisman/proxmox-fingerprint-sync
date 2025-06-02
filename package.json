@@ -13,7 +13,7 @@
         "README.md"
     ],
     "scripts": {
-        "lint": "eslint src",
+        "lint": "eslint .",
         "clean": "rimraf dist",
         "build": "npm run clean && tsc",
         "dev": "dotenv tsx src/index.ts",
@@ -25,16 +25,19 @@
         "zod": "^3.22.4"
     },
     "devDependencies": {
+        "@eslint/js": "^9.15.0",
         "@trivago/prettier-plugin-sort-imports": "^5.0.0",
         "@types/node": "^22.0.0",
-        "@typescript-eslint/eslint-plugin": "^6.13.2",
-        "@typescript-eslint/parser": "^6.13.2",
         "dotenv-cli": "^8.0.0",
-        "eslint": "^8.55.0",
+        "eslint": "^9.15.0",
+        "eslint-import-resolver-typescript": "^4.0.0",
+        "eslint-plugin-import": "^2.31.0",
         "prettier": "^3.1.0",
+        "prettier-plugin-sort-json": "^4.1.1",
         "rimraf": "^6.0.0",
         "ts-node": "^10.9.1",
         "tsx": "^4.19.3",
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "typescript-eslint": "^8.16.0"
     }
 }
