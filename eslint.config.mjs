@@ -1,8 +1,8 @@
-import eslint from '@eslint/js';
+import eslint, { defineConfig } from '@eslint/js';
 import eslintImport from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig(
     {
         ignores: ['dist/', 'eslint-plugin-import.d.ts', 'eslint.config.mjs'],
     },
