@@ -17,9 +17,11 @@
         "noUnusedParameters": true,
         "outDir": "dist",
         "resolveJsonModule": true,
+        "rootDir": "src",
         "sourceMap": true,
         "strict": true,
         "target": "ES2022",
+        "types": ["node"],
         "verbatimModuleSyntax": true
     },
     "include": ["src/"]
