@@ -1,7 +1,18 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["config:recommended", "schedule:weekly", ":prConcurrentLimitNone", ":prHourlyLimitNone"],
+    "extends": [
+        "config:recommended",
+        "schedule:weekly",
+        ":prConcurrentLimitNone",
+        ":prHourlyLimitNone",
+        ":semanticCommits",
+        ":semanticCommitTypeAll(build)"
+    ],
     "packageRules": [
+        {
+            "matchPackageNames": ["*"],
+            "minimumReleaseAge": "7 days"
+        },
         {
             "automerge": true,
             "matchCurrentVersion": "!/^0/",
