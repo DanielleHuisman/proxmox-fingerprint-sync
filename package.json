@@ -31,7 +31,6 @@
         "dotenv-cli": "^11.0.0",
         "eslint": "^10.0.0",
         "eslint-import-resolver-typescript": "^4.0.0",
-        "eslint-plugin-import": "^2.31.0",
         "prettier": "^3.1.0",
         "prettier-plugin-sort-json": "^4.1.1",
         "rimraf": "^6.0.0",

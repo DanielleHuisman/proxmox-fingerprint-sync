@@ -1,5 +1,5 @@
 import eslint from '@eslint/js';
-import eslintImport from 'eslint-plugin-import';
+// import eslintImport from 'eslint-plugin-import';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
@@ -56,24 +56,24 @@ export default defineConfig(
     },
 
     // Import
-    eslintImport.flatConfigs.recommended,
-    eslintImport.flatConfigs.typescript,
-    {
-        settings: {
-            'import/internal-regex': '^~/',
-            'import/resolver': {
-                node: {
-                    extensions: ['.ts', '.tsx'],
-                },
-                typescript: {
-                    alwaysTryTypes: true,
-                },
-            },
-        },
-        rules: {
-            'import/namespace': ['error', { allowComputed: true }],
-            // TypeScript alreadys checks imports.
-            'import/no-unresolved': 'off',
-        },
-    },
+    // eslintImport.flatConfigs.recommended,
+    // eslintImport.flatConfigs.typescript,
+    // {
+    //     settings: {
+    //         'import/internal-regex': '^~/',
+    //         'import/resolver': {
+    //             node: {
+    //                 extensions: ['.ts', '.tsx'],
+    //             },
+    //             typescript: {
+    //                 alwaysTryTypes: true,
+    //             },
+    //         },
+    //     },
+    //     rules: {
+    //         'import/namespace': ['error', { allowComputed: true }],
+    //         // TypeScript alreadys checks imports.
+    //         'import/no-unresolved': 'off',
+    //     },
+    // },
 );
